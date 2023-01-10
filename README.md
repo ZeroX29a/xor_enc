@@ -16,9 +16,8 @@ only the password *used to encrypt* will decrypt the file.
 
 
 ## So why the Extra thing ?
-<pre>The Concept of XOR is simple 
-
-      [File XOR Passwd = Enc_File]........(1)
+The Concept of XOR is simple 
+<pre>      [File XOR Passwd = Enc_File]........(1)
 </pre>
 
 And XOR is a Symmetric encryption ie Extracting Passwd is Very simple in plain file XOR Encryption.
@@ -46,11 +45,12 @@ All the Files of same type have the exact same matadata ie few bytes at the begi
 
 
 
-### Cracking Password of plain Xor Encryption
+### Cracking Password Xor without Flipping Encryption
 The [File](without_flipping/XOR-file-encryption/ref_pics/auckland.jpg) ![File](without_flipping/XOR-file-encryption/ref_pics/auckland.jpg)
 The [Sample_file](without_flipping/XOR-file-encryption/ref_pics/sample.jpg) ![Sample_file](without_flipping/XOR-file-encryption/ref_pics/sample.jpg)
 
 From these we can see that the first 12 Bytes are same 
+
 This is the hex of Enc_file
 The [Enc_file](without_flipping/XOR-file-encryption/ref_pics/new_auckland.jpg) ![Enc_file](without_flipping/XOR-file-encryption/ref_pics/new_auckland.jpg)
 
@@ -59,6 +59,8 @@ To fnd the passwd all we do is
 First 12 Bytes of(Sample_File) XOR First 12 Bytes of(Enc_File) = First 12 Bytes of(Passwd)
 ```
 ![passwd](without_flipping/XOR-file-encryption/ref_pics/passwd.jpg)
+
+All the files are included in the repo in /without_flipping/XOR-file-encryption.
 
 ### compile ###
 
