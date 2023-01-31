@@ -1,6 +1,9 @@
 # XOR File Encryption #
 
 
+## What is the point of this?
+I used to gather a lot of malware and their sources for educational purpous and RE so storing them without accidently opening or preventing my antivirus from deleting it all the time is hard. Using this the binary is encrypted into a blob of hex string which makes no sense to any program.
+
 > JCtine
 
 This work is a built up on the [project done by simon](https://github.com/mightbesimon/XOR-file-encryption)
